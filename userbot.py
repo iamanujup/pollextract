@@ -10,9 +10,9 @@ from pyrogram.errors import FloodWait
 
 load_dotenv()
 
-API_ID = int(os.getenv("API_ID", "0"))
-API_HASH = os.getenv("API_HASH", "")
-BOT_TOKEN = os.getenv("BOT_TOKEN", "")
+API_ID = int(os.getenv("API_ID", "5074166"))
+API_HASH = os.getenv("API_HASH", "3cb93a9a9345592f5e6a42020687cdbe")
+BOT_TOKEN = os.getenv("BOT_TOKEN", "8809092646:AAEPX9hfULZ07jm8p10HxquHLKo7m22XuJw")
 QUESTION_TIME = int(os.getenv("QUESTION_TIME", "20"))
 
 if not API_ID or not API_HASH or not BOT_TOKEN:
