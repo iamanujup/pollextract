@@ -9,8 +9,8 @@ from telethon.errors import FloodWaitError
 
 load_dotenv()
 
-API_ID = int(os.getenv("API_ID", "0"))
-API_HASH = os.getenv("API_HASH", "")
+API_ID = int(os.getenv("API_ID", "5074166"))
+API_HASH = os.getenv("API_HASH", "3cb93a9a9345592f5e6a42020687cdbe")
 SESSION_NAME = os.getenv("SESSION_NAME", "quiz_userbot")
 DEFAULT_QUESTION_TIME = int(os.getenv("QUESTION_TIME", "20"))
 
