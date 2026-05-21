@@ -1,52 +1,52 @@
-# Quiz Userbot R2R
+# Telegram Quiz Bot R2R
 
-## Setup
+Ye Bot Token wala version hai. Isme session nahi chahiye.
 
-1. Install:
+Important:
+- Bot external Telegram link se old poll read nahi kar sakta.
+- Questions text format se load honge.
+- Bot group me quiz poll bhejega, 20 sec baad close karega, result dega.
+
+## Render
+
+Runtime: Python
+
+Build Command:
 ```bash
 pip install -r requirements.txt
 ```
 
-2. `.env.example` ko copy karke `.env` banao:
+Start Command:
 ```bash
-cp .env.example .env
+python main.py
 ```
 
-3. `.env` me API_ID aur API_HASH भरो.
-
-API_ID/API_HASH yaha se milega:
-https://my.telegram.org
-
-4. Run:
-```bash
-python userbot.py
+Environment Variables:
+```env
+API_ID=your_api_id
+API_HASH=your_api_hash
+BOT_TOKEN=your_bot_token
+QUESTION_TIME=20
 ```
 
-First time phone number, OTP, 2FA password मांगेगा.
-
-## Commands
+## Telegram commands
 
 ```text
-.helpquiz
-.ping
-.loadquiz <telegram_link>
-.startquiz
-.settime <seconds>
-.resultquiz
-.stopquiz
-.clearquiz
+/start
+/help
+/sample
+/loadquiz
+/startquiz
+/result
+/settime 30
+/stopquiz
+/clearquiz
 ```
 
-Example:
+## Use
 
-```text
-.loadquiz https://t.me/examdrishtiquiz/2591118/50
-.startquiz
-.resultquiz
-```
-
-Rule:
-1 सही answer = 1 number
-
-Default time:
-20 sec per question.
+1. /sample bhejo aur format dekho
+2. Apne questions ek message me bhejo
+3. Us questions message par reply karke /loadquiz likho
+4. /startquiz
+5. /result
