@@ -11,7 +11,7 @@ load_dotenv()
 
 API_ID = int(os.getenv("API_ID", "5074166"))
 API_HASH = os.getenv("API_HASH", "3cb93a9a9345592f5e6a42020687cdbe")
-SESSION_NAME = os.getenv("SESSION_NAME", "quiz_userbot")
+SESSION_NAME = os.getenv("SESSION_NAME", "BQBNbPYAifO68jh9bCWHKJZVyLVQCNlCI2yUfCcvM06fs98OV9pEDilc7FliFPaXSRLolZjOrNhjQtp3uO-ylR43Ju4AYZZnI2b6gi_0ciSrh6_zxttL5bznRVGw4NMr8ShbLC8TuMzQSwQZXGk-vGcPFUYYRtRsyWdXo78xgMV_iasDHA6mcFcTCpgQzqZe6TXAAWfqanvaM3g7JpPp7ZbsaB4ZSpMkDXWunlOAUAAnnTWF1FrzgaeaqEtZVOjC9yFEW8ihIHNZ5uzC453aaz1twgUlv6xrPx46RpDgmTMyuvvRw51kXA_SYH0XBFbfpefpph_Imh-nF46vtgpAUS-gcmERcQAAAAIQQxmFAA")
 DEFAULT_QUESTION_TIME = int(os.getenv("QUESTION_TIME", "20"))
 
 if not API_ID or not API_HASH:
